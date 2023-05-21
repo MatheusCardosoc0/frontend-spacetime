@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logo from '../assets/logo.svg'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -16,12 +17,12 @@ const Hero = () => {
         </p>
       </div>
 
-      <a
+      <Link
         className="text-small inline-block rounded-full bg-green-500 px-5 py-3 font-alt uppercase leading-none text-black hover:bg-green-600"
-        href=""
+        href="/memories/new"
       >
         CADASTRAR LEMBRANÇA
-      </a>
+      </Link>
     </div>
   )
 }
